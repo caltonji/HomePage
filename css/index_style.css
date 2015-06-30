@@ -57,6 +57,12 @@ div.project {
   	min-width: 300px;
 }
 
+img.self-portrait {
+	border-radius: 100%;
+	max-width: 200px;
+	width: 100%;
+}
+
 
 /* colors and styling */
 div#banner {
