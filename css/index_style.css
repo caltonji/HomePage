@@ -43,8 +43,14 @@ div.solo {
 }
 
 div.header {
-	min-height: 100px;
-	background: #60646D;
+	min-height: 70px;
+	background: #BDC3C7;
+	/*-webkit-box-shadow: inset 0px 1px 3px -1px rgba(0,0,0,0.75),
+	inset 0px -1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 1px 3px -1px rgba(0,0,0,0.75),
+	0px -1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 1px 3px -1px rgba(0,0,0,0.75),
+	inset 0px -1px 3px -1px rgba(0,0,0,0.75);*/
 }
 
 div.job {
@@ -55,6 +61,14 @@ div.job {
 div.project {
 	min-height: 360px;
   	min-width: 300px;
+}
+
+div.footer {
+	min-height: 120px;
+	min-width: 300px;
+	-webkit-box-shadow: inset 0px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 1px 3px -1px rgba(0,0,0,0.75);
 }
 
 img.self-portrait {
@@ -68,9 +82,10 @@ img.self-portrait {
 /* colors and styling */
 div#banner {
 	order: 1;
-	background-image: url("../images/TechLawn.jpg");
+	/*background-image: url("../images/TechLawn.jpg");
 	background-position: center;
-	opacity: 0.79;
+	opacity: 0.79;*/
+	background: #67809F;
 	width:100%;
 }
 
@@ -104,8 +119,17 @@ div#selfie_aware {
 	background: #FDFDFD;
 }
 
+div#github {
+	background: #F2F1EF;
+}
+
 div#education {
 	background: #FFFFF7;
+	order: 7;
+}
+
+div#involvements{
+	background: #646464;
 	order: 7;
 }
 
@@ -122,11 +146,11 @@ div#geofeedia {
 }
 
 div#ravinia {
-	background: #383838;
+	background: #D2D7D3;
 }
 
-div#skills {
-	background: #FFFFF7
+div#footer {
+	background: #67809F;
 	order: 8;
 }
 
@@ -144,13 +168,12 @@ span.image {
 	-webkit-border-radius: 2px; 
     -moz-border-radius: 2px;
 	border-radius: 2px;
-
 }
 
 img {
-	-webkit-border-radius: 2px; 
-    -moz-border-radius: 2px;
-	border-radius: 2px;
+	-webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 img#shimmy {
@@ -179,44 +202,71 @@ ul.awards {
 
 span.fa-trophy {
 	color: white;
-    font-size: 4em;
     background: gold;
     display: inline-block;
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%;
     border-radius: 100%;
-    -moz-box-shadow: 0px 0px 2px #888;
+    /*-moz-box-shadow: 0px 0px 2px #888;
     -webkit-box-shadow: 0px 0px 2px #888;
-    box-shadow: 0px 0px 2px #888;
-    font-size: 58px;
+    box-shadow: 0px 0px 2px #888;*/
+    font-size: 43px;
     padding: 12px;
     vertical-align: middle;
 }
 
+h2.involvements {
+	color: #FFFFF7;
+}
+
+h3.involvements {
+	color: #FFFFF7;
+}
+
 
 .text-name {
-	color: white;
-
+	color: #F2F1EF;
+	font-family: "Merriweather",serif;
+	font-size: 3em;
+	font-weight: 300;
 }
 
 .text-description {
-	color:white;
+	color: #F2F1EF;
+	font-family: "Merriweather",serif;
+	font-size: 1.5em;
+	font-weight: 200;
+	margin-top:-1em;
+	margin-bottom:1em;
 }
 
 .section-description {
 	float: left;
 	padding-left: 20px;
+	color: #F2F1EF;
+	font-family: "Merriweather",serif;
+	font-size: 3em;
+	font-style: italic;
 }
 .title-first {
-
+	font-family: "Source Sans Pro",sans-serif;
+	color: #646464;
+	font-size: 2.25em;
+	line-height: 1.5em;
+	letter-spacing: -0.035em;
+	font-weight: 300;
 }
 
 .title-second {
-
+	font-weight: 200;
 }
 
 .text-main {
-
+	font-weight: 400;
+	text-align: left;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 1.3em;
 }
 
 h3.award {
@@ -231,5 +281,29 @@ h4.award {
 	text-align: center;
 	margin: 0 auto;
 	padding-left: 2em;
-	margin-top: -.5em;
+	margin-top: -1.5em;
+}
+
+
+
+div.line-seperator{
+	height:1px;
+	background: rgb(100, 100, 100);
+	border-bottom:.0001px solid  rgb(100, 100, 100);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: .8em;
+	margin-right: .8em;
+}
+
+hr.style-two { 
+	border: 0; 
+	height: 1px; 
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+}
+/* Inset, by Dan Eden */ 
+hr.style-six { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.center {
+	text-align: center;
 }
