@@ -13,6 +13,9 @@ body {
   flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
+  flex-flow: row wrap; 
+  text-align: center; 
+  flex: 1 1 100%;
 }
 
 
@@ -39,12 +42,14 @@ div.solo {
 
 /* Sizing */
 #banner {
-	min-height: 500px;
+	display: table-cell;
+  	vertical-align: middle;
+  	text-align: center;
 }
 
 div.header {
 	min-height: 70px;
-	background: #BDC3C7;
+	background: #67809F;
 	/*-webkit-box-shadow: inset 0px 1px 3px -1px rgba(0,0,0,0.75),
 	inset 0px -1px 3px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: inset 0px 1px 3px -1px rgba(0,0,0,0.75),
@@ -81,21 +86,20 @@ img.self-portrait {
 
 /* colors and styling */
 div#banner {
-	order: 1;
-	/*background-image: url("../images/TechLawn.jpg");
-	background-position: center;
-	opacity: 0.79;*/
-	background: #67809F;
-	width:100%;
+	background: url(../images/bobbydoddfireworks.jpg) no-repeat center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+ 	background-color: rgba(255, 255, 255, .3);
+	background-blend-mode: color;
 }
 
 div#about_me {
 	background: #FFFFF7;
-	order: 2;
 }
 
 div#projects_header {
-	order: 3;
 }
 
 div#shimmy_crm {
@@ -125,16 +129,13 @@ div#github {
 
 div#education {
 	background: #FFFFF7;
-	order: 7;
 }
 
 div#involvements{
 	background: #646464;
-	order: 7;
 }
 
 div#work_header {
-	order: 5;
 }
 
 div#air_watch {
@@ -151,7 +152,6 @@ div#ravinia {
 
 div#footer {
 	background: #67809F;
-	order: 8;
 }
 
 img.project {
@@ -163,7 +163,6 @@ img.job {
 	max-width:310px;
 	width:100%;
 }
-
 span.image {
 	-webkit-border-radius: 2px; 
     -moz-border-radius: 2px;
@@ -179,6 +178,28 @@ img {
 img#shimmy {
 	border:4px solid #FFFFFF;
 }
+
+a#button {
+	box-shadow: none;
+    background: #fff;
+    color: #67809F;
+    text-decoration: none;
+}
+h2#button {
+	display: inline-block;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-end: 0px;
+    font-size: 2.1em;
+    line-height: 1.5em;
+    letter-spacing: 0;
+    background: #fff;
+    padding: 0.2em 0.4em .2em .4em;
+    border-radius: 0.2em;
+}
+}
+
 /* fonts */
 h2 {
 	font-family: "PT Sans",sans-serif;
@@ -190,7 +211,7 @@ h2 {
 }
 
 p {
-	color: #838C95;
+	color: #22313F;
 	font-size: 14px;
 	line-height: 24px;
 	padding: 5px 0px;
@@ -215,24 +236,71 @@ span.fa-trophy {
     vertical-align: middle;
 }
 
+i.major {
+	color: #67809F;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 4em;
+    padding: .05em;
+}
+
+
+button.large {
+	margin: 0 auto;
+	top: 60px;
+}
+
+.large:hover {
+
+}
+.large:active {
+	position:relative;
+	top:1px;
+}
+
+}
+
+button.large:hover {
+
+}
+
+p.img_desc {
+    font-style: italic;
+    font-weight: 200;
+}
+
 h2.involvements {
 	color: #FFFFF7;
 }
-
 h3.involvements {
 	color: #FFFFF7;
 }
 
-
+h2.education {
+	color: #646464;
+}
+h3.education {
+	color: #646464;
+}
+div#floating_name_card {
+	width: 300px;
+	background: #F2F1EF;
+	-webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 20px;
+	margin: 30px;
+}
 .text-name {
-	color: #F2F1EF;
+	color: #67809F;
 	font-family: "Merriweather",serif;
 	font-size: 3em;
 	font-weight: 300;
 }
 
 .text-description {
-	color: #F2F1EF;
+	color: #67809F;
 	font-family: "Merriweather",serif;
 	font-size: 1.5em;
 	font-weight: 200;
@@ -250,7 +318,7 @@ h3.involvements {
 }
 .title-first {
 	font-family: "Source Sans Pro",sans-serif;
-	color: #646464;
+	color: #67809F;
 	font-size: 2.25em;
 	line-height: 1.5em;
 	letter-spacing: -0.035em;
@@ -259,6 +327,7 @@ h3.involvements {
 
 .title-second {
 	font-weight: 200;
+	color: #22313F;
 }
 
 .text-main {
@@ -306,4 +375,37 @@ hr.style-six { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); b
 
 .center {
 	text-align: center;
+}
+
+.row-1 {
+	order: 1;
+}
+.row-2 {
+	order: 2;
+}
+.row-3 {
+	order: 3;
+}
+.row-4 {
+	order: 4;
+}
+.row-5 {
+	order: 5;
+}
+.row-6 {
+	order: 6;
+}
+.row-7 {
+	order: 7;
+}
+.row-8 {
+	order: 8;
+}
+
+.row-9 {
+	order: 9;
+}
+
+.row-10 {
+	order: 10;
 }
