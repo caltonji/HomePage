@@ -1,0 +1,455 @@
+@slate: #556270;
+@header-font: "Source Sans Pro",sans-serif;
+@break-point: 420px;
+
+body {
+    font-family: "PT Sans",sans-serif;  
+}
+
+/* flex rules */
+#wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  flex-flow: row wrap; 
+  text-align: center; 
+  flex: 1 1 100%;
+}
+
+div.col-2 {
+    flex: 2 2 50%;
+}
+
+div.col-3 {
+    flex: 3 3 30%;
+}
+
+div.project {
+    order: 4;
+}
+
+div.job {
+    order: 6;
+}
+
+div.solo {
+    flex: 1 1 100%;
+}
+
+
+/* Sizing */
+#banner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+div.header {
+    min-height: 70px;
+    background: @slate;
+    /*-webkit-box-shadow: inset 0px 1px 3px -1px rgba(0,0,0,0.75),
+    inset 0px -1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 1px 3px -1px rgba(0,0,0,0.75),
+    0px -1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 1px 3px -1px rgba(0,0,0,0.75),
+    inset 0px -1px 3px -1px rgba(0,0,0,0.75);*/
+}
+
+div#floating_name_card {
+    width: 300px;
+    background: #F2F1EF;
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 20px;
+    margin: 30px;
+}
+
+img.self-portrait {
+    /*border-radius: 100%;*/
+    max-width: 200px;
+    width: 100%;
+    border: solid 1px white;
+}
+
+div.job {
+    min-height:360px;
+    min-width:@break-point;
+    display:flex;
+    flex-direction:column;
+}
+
+div.project {
+    min-height: 360px;
+    min-width: @break-point;
+    display:flex;
+    flex-direction:column;
+}
+
+div.footer {
+    min-height: 120px;
+    min-width: @break-point;
+}
+
+/* mobile phone */
+@media only screen and (max-device-width: 480px) {
+    @phone-break-point: 600px;
+    div.job {
+        min-width: @phone-break-point;
+    }
+
+    div.project {
+        min-width: @phone-break-point;
+    }
+
+    div.footer {
+        min-width: @phone-break-point;
+    } 
+}
+
+
+
+/* colors and styling */
+div#banner {
+    background: @slate;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*background-color: rgba(255, 255, 255, .3);*/
+    background-blend-mode: color;
+}
+
+div#about_me {
+    background: #FFFFF7;
+}
+
+div#projects_header {
+}
+
+div#shimmy_crm {
+    background: #EBF6FF none repeat scroll 0% 0%;
+}
+
+div#oahu {
+    background: #52cd72;
+}
+
+div#samplify {
+    background: #F5EBBB;
+}
+
+div#tweet_map {
+    /*background: #FF6766;*/
+    background: #FFFFFF;
+}
+
+div#selfie_aware {
+    background: #FDFDFD;
+}
+
+div#github {
+    background: #F2F1EF;
+}
+
+div#education {
+    background: #FFFFF7;
+}
+
+div#involvements{
+    background: #646464;
+}
+
+div#work_header {
+}
+
+div#air_watch {
+    background: #EEEEF0;
+}
+
+div#geofeedia {
+    background: white;
+}
+
+div#ravinia {
+    background: #D2D7D3;
+}
+
+div#footer {
+    background: @slate;
+}
+
+div.resume {
+    background: @slate;
+}
+
+img.project {
+    max-width:250px;
+    width:100%;
+}
+
+img.job {
+    max-width:250px;
+    width:100%;
+}
+span.image {
+    height:250px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    -webkit-border-radius: 2px; 
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+img {
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+img#shimmy {
+    border:4px solid #FFFFFF;
+}
+
+a#button {
+    box-shadow: none;
+    background: #F2F1EF;
+    color: @slate;
+    text-decoration: none;
+}
+h2#button {
+    display: inline-block;
+    -webkit-margin-after: .5em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-before: .7em;
+    -webkit-margin-end: 0px;
+    font-size: 2.1em;
+    line-height: 1.5em;
+    letter-spacing: 0;
+    background: #fff;
+    padding: 0.2em 0.4em .2em .4em;
+    border-radius: 0.2em;
+}
+
+/* fonts */
+h2 {
+    font-family: "PT Sans",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 0px;
+    padding: 5px 0px;
+    /*text-transform: uppercase;*/
+}
+
+p {
+    color: #22313F;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 5px 0px;
+}
+
+ul.awards {
+    list-style: outside none none;
+    padding:0;
+    margin:0;
+}
+
+span.fa-trophy {
+    color: white;
+    background: gold;
+    display: inline-block;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    /*-moz-box-shadow: 0px 0px 2px #888;
+    -webkit-box-shadow: 0px 0px 2px #888;
+    box-shadow: 0px 0px 2px #888;*/
+    font-size: 43px;
+    padding: 12px;
+    vertical-align: middle;
+}
+
+i.major {
+    color: @slate;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 4em;
+    padding: .05em;
+}
+
+
+button.large {
+    margin: 0 auto;
+    top: 60px;
+}
+
+.large:hover {
+
+}
+
+.large:active {
+    position:relative;
+    top:1px;
+}
+
+
+button.large:hover {
+
+}
+
+p.img_desc {
+    font-style: italic;
+    font-weight: 200;
+}
+
+h2.involvements {
+    color: #FFFFF7;
+}
+h3.involvements {
+    color: #FFFFF7;
+}
+
+h2.education {
+    color: #646464;
+}
+h3.education {
+    color: #646464;
+}
+
+.text-name {
+    color: @slate;
+    font-family: @header-font;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.text-description {
+    color: @slate;
+    font-family: @header-font;
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-top:-1em;
+    margin-bottom:1em;
+    text-align: left;
+    padding-left:1em;
+}
+
+.section-description {
+    float: left;
+    padding-left: 20px;
+    color: #F2F1EF;
+    font-family: @header-font;
+    font-size: 3.2em;
+    font-weight:300;
+}
+.title-first {
+    font-family: "Source Sans Pro",sans-serif;
+    color: @slate;
+    font-size: 2.25em;
+    line-height: 1.5em;
+    letter-spacing: -0.035em;
+    font-weight: 300;
+}
+
+.title-second {
+    font-weight: 200;
+    color: #22313F;
+}
+
+.text-main {
+    font-weight: 400;
+    text-align: left;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.3em;
+}
+
+ul.awards li {
+    float: left;
+    width:100%;
+}
+
+h3.award {
+    display: inline-block;
+    font-size: 2em;
+    padding-left: 0.3em;
+    vertical-align: middle;
+}
+
+h4.award {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 2em;
+    margin-top: -1.5em;
+}
+
+
+
+div.line-seperator{
+    height:1px;
+    background: rgb(100, 100, 100);
+    border-bottom:.0001px solid  rgb(100, 100, 100);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: .8em;
+    margin-right: .8em;
+}
+
+hr.style-two { 
+    border: 0; 
+    height: 1px; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+}
+/* Inset, by Dan Eden */ 
+hr.style-six { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+hr.style-six {
+    width: 100%;
+}
+hr.technologies-used {
+    margin-top:auto;
+}
+.center {
+    text-align: center;
+}
+
+.row-1 {
+    order: 1;
+}
+.row-2 {
+    order: 2;
+}
+.row-3 {
+    order: 3;
+}
+.row-4 {
+    order: 4;
+}
+.row-5 {
+    order: 5;
+}
+.row-6 {
+    order: 6;
+}
+.row-7 {
+    order: 7;
+}
+.row-8 {
+    order: 8;
+}
+
+.row-9 {
+    order: 9;
+}
+
+.row-10 {
+    order: 10;
+}
