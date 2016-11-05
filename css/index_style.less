@@ -81,9 +81,11 @@ img.self-portrait {
 
 div.job {
     min-height:360px;
-    min-width:@break-point;
+    min-width:365px;
     display:flex;
     flex-direction:column;
+    border: 1px solid #e4e4e4;
+    box-sizing:border-box
 }
 
 div.project {
@@ -91,6 +93,8 @@ div.project {
     min-width: @break-point;
     display:flex;
     flex-direction:column;
+    border: 1px solid #e4e4e4;
+    box-sizing:border-box
 }
 
 div.footer {
@@ -161,13 +165,21 @@ div#github {
 
 div#education {
     background: #FFFFF7;
+    border: 1px solid rgba(0, 0, 0, .10);
+    box-sizing: border-box;
 }
 
 div#involvements{
     background: #646464;
+    border: 1px solid rgba(0, 0, 0, .10);
+    box-sizing: border-box;
 }
 
 div#work_header {
+}
+
+div#microsoft {
+    background: white;
 }
 
 div#air_watch {
@@ -410,12 +422,19 @@ hr.style-two {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
 }
 /* Inset, by Dan Eden */ 
-hr.style-six { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+hr.style-six { border: 0; height: 0; 
+    border-top: 1px solid rgba(0, 0, 0, 0.1); 
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+}
 hr.style-six {
     width: 100%;
 }
 hr.technologies-used {
     margin-top:auto;
+}
+
+#sx_link {
+    color:#FFFFF7;
 }
 .center {
     text-align: center;
